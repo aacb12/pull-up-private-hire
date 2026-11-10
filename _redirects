@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects.
+
+# Repo files that don't belong on the public site
+/README.md              /                 301
+/.gitignore             /                 301
