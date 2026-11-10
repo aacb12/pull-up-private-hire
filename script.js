@@ -92,7 +92,7 @@ function buildMessage() {
   return lines.join("\n");
 }
 
-// No backend on Cloudflare Pages, so hand the message off to WhatsApp or email
+// Static site with no backend, so hand the message off to WhatsApp or email
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(buildMessage())}`, "_blank", "noopener");

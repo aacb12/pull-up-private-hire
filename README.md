@@ -1,8 +1,23 @@
 # Pull Up Private Hire website
 
-One-page site for Pull Up Private Hire (airport transfers and long-distance journeys from Glasgow), plus a privacy page. It uses the same branding, fonts and components as [Pull Up Driving School](https://pullupdrivingschool.co.uk/) (`../pull-up-driving-school`).
+One-page site for Pull Up Private Hire (airport transfers and long-distance journeys from Glasgow), plus a privacy page. It uses the same branding, fonts and components as [Pull Up Driving School](https://pullupdrivingschool.co.uk/).
 
 Plain HTML/CSS/JS, no build step. Open `index.html` or run `python3 -m http.server` in this folder.
+
+Live at **https://aacb12.github.io/pull-up-private-hire/**
+
+## Hosting
+
+GitHub Pages serves the `main` branch of this public repo, so every push to `main` updates the live site within a minute or two. `.nojekyll` tells GitHub to serve the files as they are.
+
+The site lives in a subfolder (`/pull-up-private-hire/`), so all links are relative. `404.html` is the exception: GitHub serves it at any missing URL, so it uses `<base href="/pull-up-private-hire/">` to find the stylesheet and images.
+
+### Adding a domain later
+
+1. Buy the domain, then in the repo go to **Settings → Pages → Custom domain** and enter it. Point its DNS at GitHub Pages as GitHub describes, then tick **Enforce HTTPS**.
+2. Replace `https://aacb12.github.io/pull-up-private-hire/` with the new address in `index.html` (canonical, og tags, structured data), `privacy/index.html`, `robots.txt` and `sitemap.xml`.
+3. In `404.html`, change `<base href="/pull-up-private-hire/">` to `<base href="/">`.
+4. Update the footer link on the driving school site.
 
 ## How the quote form works
 
@@ -24,9 +39,8 @@ The car takes up to 4 passengers and 3 large suitcases, so the form only offers 
 
 The site says "private hire", not "taxi". In Scotland a taxi (hackney carriage) and a private hire car have different licences, and private hire journeys must be pre-booked.
 
-## Still to do before going live (check with Siraj)
+## Still to check with the owner
 
-- **Domain.** `pullupprivatehire.co.uk` is a placeholder in `index.html` (canonical, og tags, structured data), `privacy/index.html`, `robots.txt` and `sitemap.xml`.
 - **Contact details.** Phone, WhatsApp and email are the driving school's (07741 405694, puotl@outlook.com), in `index.html`, `script.js` and `privacy/index.html`. Change them if the private hire side uses different ones.
 - **Licence.** The page says "Licensed private hire driver and car". Confirm this, and add the council licence number if he wants it shown.
 - **Promises on the page.** Confirm he's happy to offer each one: flight tracking, early and late pick-ups, help with bags, smoke-free car, comfort stops on long trips, WhatsApp updates before pick-up. The FAQ answer on child seats says to ask.
@@ -34,4 +48,4 @@ The site says "private hire", not "taxi". In Scotland a taxi (hackney carriage) 
 - **Photos.** There's no photo of the private hire car yet. A photo of the car (and of him with it) would strengthen the "Your car" section.
 - **Prices.** None are shown. If he wants "from £X" prices on the airport and route cards, get a list from him.
 - **Terms and conditions.** Not written yet. They need his cancellation, waiting time and payment policy.
-- **Hosting.** Set up like the driving school: a GitHub repo, deployed by Cloudflare Pages on every push to `main`.
+- **Domain.** See "Adding a domain later" above.

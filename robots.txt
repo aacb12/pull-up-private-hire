@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pullupprivatehire.co.uk/sitemap.xml
+Sitemap: https://aacb12.github.io/pull-up-private-hire/sitemap.xml
