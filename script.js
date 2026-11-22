@@ -52,6 +52,15 @@ function syncTrip() {
 form.querySelectorAll('input[name="trip"]').forEach((r) => r.addEventListener("change", syncTrip));
 syncTrip();
 
+// The car takes 4 passengers and 2 large suitcases; above that, say a bigger vehicle will be arranged
+const sizeNote = document.getElementById("size-note");
+function syncSize() {
+  sizeNote.hidden = parseInt(f.passengers.value, 10) <= 4 && parseInt(f.cases.value, 10) <= 2;
+}
+f.passengers.addEventListener("change", syncSize);
+f.cases.addEventListener("change", syncSize);
+syncSize();
+
 // Rows in the price list fill in the drop-off, then the link scrolls to the form
 const finePointer = window.matchMedia("(pointer: fine)").matches;
 document.querySelectorAll("[data-to]").forEach((card) =>

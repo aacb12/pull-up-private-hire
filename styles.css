@@ -177,6 +177,8 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .more[open] summary::before { transform: rotate(45deg); }
 .more[open] summary { margin-bottom: 12px; }
 
+.size-note { margin: -2px 0 14px; padding: 10px 12px; border-radius: 10px; background: var(--gold-tint); border: 1px solid var(--gold-line); color: var(--white); font-size: .86rem; line-height: 1.45; }
+.size-note[hidden] { display: none; }
 .form-note { display: flex; align-items: center; gap: 10px; margin: 16px 0 0; padding-top: 14px; border-top: 1px solid var(--border); color: var(--muted); font-size: .86rem; }
 .form-note svg { color: var(--gold); width: 20px; height: 20px; }
 

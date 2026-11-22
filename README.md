@@ -12,7 +12,7 @@ GitHub Pages serves the `main` branch of this public repo, so every push to `mai
 
 The site lives in a subfolder (`/pull-up-private-hire/`), so all links are relative. `404.html` is the exception: GitHub serves it at any missing URL, so it uses `<base href="/pull-up-private-hire/">` to find the stylesheet and images.
 
-Browsers keep a copy of each file for up to 10 minutes. The pages load `styles.css?v=2` and `script.js?v=2`, so a returning visitor never mixes a new page with an old stylesheet. **When you change `styles.css` or `script.js`, raise the number** in `index.html`, `404.html` and `privacy/index.html`.
+Browsers keep a copy of each file for up to 10 minutes. The pages load `styles.css?v=3` and `script.js?v=3`, so a returning visitor never mixes a new page with an old stylesheet. **When you change `styles.css` or `script.js`, raise the number** in `index.html`, `404.html` and `privacy/index.html`.
 
 ### Adding a domain later
 
@@ -25,7 +25,7 @@ Browsers keep a copy of each file for up to 10 minutes. The pages load `styles.c
 
 There's no backend. The quote form in the hero builds a message with the journey details (pick-up, drop-off, date, time, return, passengers, suitcases, flight number) and opens WhatsApp with it ready to send. "Or send by email instead" does the same with an email. Each row in the fixed price list fills in the drop-off and jumps to the form.
 
-The car takes up to 4 passengers and 3 large suitcases, so the form only offers 1–4 and 0–3.
+The owner's car takes up to 4 passengers and 2 large suitcases. When a job doesn't fit, he passes it to drivers he knows with bigger vehicles. So the form lets people choose up to "9 or more" passengers and "7 or more" suitcases. Anything over 4 passengers or 2 suitcases shows a note saying a bigger vehicle will be arranged.
 
 ## Prices
 
