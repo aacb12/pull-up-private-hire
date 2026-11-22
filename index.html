@@ -59,7 +59,6 @@
       <nav class="nav" id="nav">
         <a href="#airports">Airports</a>
         <a href="#long-distance">Long distance</a>
-        <a href="#prices">Prices</a>
         <a href="#how">How it works</a>
         <a href="#car">Your car</a>
         <a href="#faq">FAQ</a>
@@ -95,7 +94,7 @@
           <div class="hero-airports">
             <p>Airports we cover</p>
             <ul>
-              <li>Glasgow</li><li>Edinburgh</li><li>Prestwick</li><li>Aberdeen</li><li>Inverness</li><li>Newcastle</li><li>Manchester</li><li>London</li>
+              <li>Glasgow</li><li>Edinburgh</li><li>Prestwick</li><li>Aberdeen</li><li>Inverness</li><li>Newcastle</li><li>Manchester</li><li>Liverpool</li><li>Birmingham</li><li>London</li>
             </ul>
           </div>
         </div>
@@ -165,6 +164,8 @@
             <option value="Inverness Airport"></option>
             <option value="Newcastle Airport"></option>
             <option value="Manchester Airport"></option>
+            <option value="Liverpool John Lennon Airport"></option>
+            <option value="Birmingham Airport"></option>
             <option value="London Heathrow Airport"></option>
             <option value="London Gatwick Airport"></option>
             <option value="London Stansted Airport"></option>
@@ -183,20 +184,24 @@
         <div class="section-head">
           <p class="kicker">Airport transfers</p>
           <h2>Catch your flight without the stress</h2>
-          <p class="section-sub">Drop-offs and pick-ups at every major airport in Scotland, the north of England and London. Pick an airport for a price.</p>
+          <p class="section-sub">Drop-offs and pick-ups at airports across Scotland and England. Pick an airport to book or get a price.</p>
+          <p class="price-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0h-1c1.2.8 2 2 2 3.5V19h6v-2.5c0-2.3-4.7-3.5-7-3.5Z"/></svg>
+            Fixed prices are based on a maximum of 4 passengers.
+          </p>
         </div>
-        <div class="dest-grid">
+        <div class="dest-grid dest-grid-5">
           <a class="dest-card" href="#quote" data-to="Glasgow Airport">
             <span class="dest-top"><span class="code">GLA</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
             <h3>Glasgow Airport</h3>
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>20 min</span>
-            <span class="dest-cta">Get a price</span>
+            <span class="dest-cta dest-price"><small>From</small> £35</span>
           </a>
           <a class="dest-card" href="#quote" data-to="Edinburgh Airport">
             <span class="dest-top"><span class="code">EDI</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
             <h3>Edinburgh Airport</h3>
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>50 min</span>
-            <span class="dest-cta">Get a price</span>
+            <span class="dest-cta dest-price">£75</span>
           </a>
           <a class="dest-card" href="#quote" data-to="Glasgow Prestwick Airport">
             <span class="dest-top"><span class="code">PIK</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
@@ -220,22 +225,34 @@
             <span class="dest-top"><span class="code">NCL</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
             <h3>Newcastle Airport</h3>
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>3 hr</span>
-            <span class="dest-cta">Get a price</span>
+            <span class="dest-cta dest-price">£270</span>
           </a>
           <a class="dest-card" href="#quote" data-to="Manchester Airport">
             <span class="dest-top"><span class="code">MAN</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
             <h3>Manchester Airport</h3>
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>4 hr</span>
-            <span class="dest-cta">Get a price</span>
+            <span class="dest-cta dest-price">£360</span>
+          </a>
+          <a class="dest-card" href="#quote" data-to="Liverpool John Lennon Airport">
+            <span class="dest-top"><span class="code">LPL</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
+            <h3>Liverpool Airport</h3>
+            <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>4 hr</span>
+            <span class="dest-cta dest-price">£325</span>
+          </a>
+          <a class="dest-card" href="#quote" data-to="Birmingham Airport">
+            <span class="dest-top"><span class="code">BHX</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
+            <h3>Birmingham Airport</h3>
+            <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>5 hr</span>
+            <span class="dest-cta dest-price">£430</span>
           </a>
           <a class="dest-card" href="#quote" data-to="London Heathrow Airport">
-            <span class="dest-top"><span class="code">LON</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
-            <h3>London airports</h3>
+            <span class="dest-top"><span class="code">LHR</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg></span>
+            <h3>London Heathrow</h3>
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>7 hr 30 min</span>
-            <span class="dest-cta">Get a price</span>
+            <span class="dest-cta dest-price">£635</span>
           </a>
         </div>
-        <p class="grid-note">Approximate driving times from Glasgow city centre. Traffic and time of day make a difference.</p>
+        <p class="grid-note">Prices are one way from Glasgow. Glasgow Airport is £45 from East Kilbride. Driving times are approximate, from Glasgow city centre.</p>
 
         <!-- TODO: check each promise in this panel with the driver before going live -->
         <div class="panel">
@@ -272,6 +289,10 @@
           <p class="kicker">Long-distance journeys</p>
           <h2>Going further? We’ll take you all the way</h2>
           <p class="section-sub">Door-to-door journeys across Scotland and down to England. Here are some popular trips from Glasgow.</p>
+          <p class="price-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0h-1c1.2.8 2 2 2 3.5V19h6v-2.5c0-2.3-4.7-3.5-7-3.5Z"/></svg>
+            Fixed prices are based on a maximum of 4 passengers.
+          </p>
         </div>
         <div class="dest-grid">
           <a class="dest-card" href="#quote" data-to="St Andrews">
@@ -304,27 +325,45 @@
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>3 hr 30 min</span>
             <span class="dest-cta">Get a price</span>
           </a>
-          <a class="dest-card" href="#quote" data-to="Manchester">
-            <span class="dest-top route"><span>Glasgow</span><i></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
-            <h3>Manchester</h3>
-            <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>4 hr</span>
-            <span class="dest-cta">Get a price</span>
-          </a>
           <a class="dest-card" href="#quote" data-to="Portree, Isle of Skye">
             <span class="dest-top route"><span>Glasgow</span><i></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
             <h3>Isle of Skye</h3>
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>5 hr</span>
             <span class="dest-cta">Get a price</span>
           </a>
+          <a class="dest-card" href="#quote" data-to="Newcastle">
+            <span class="dest-top route"><span>Glasgow</span><i></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+            <h3>Newcastle</h3>
+            <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>3 hr</span>
+            <span class="dest-cta dest-price">£250</span>
+          </a>
+          <a class="dest-card" href="#quote" data-to="Manchester">
+            <span class="dest-top route"><span>Glasgow</span><i></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+            <h3>Manchester</h3>
+            <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>4 hr</span>
+            <span class="dest-cta dest-price">£335</span>
+          </a>
+          <a class="dest-card" href="#quote" data-to="Liverpool">
+            <span class="dest-top route"><span>Glasgow</span><i></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+            <h3>Liverpool</h3>
+            <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>4 hr</span>
+            <span class="dest-cta dest-price">£310</span>
+          </a>
+          <a class="dest-card" href="#quote" data-to="Birmingham">
+            <span class="dest-top route"><span>Glasgow</span><i></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+            <h3>Birmingham</h3>
+            <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>5 hr</span>
+            <span class="dest-cta dest-price">£410</span>
+          </a>
           <a class="dest-card" href="#quote" data-to="London">
             <span class="dest-top route"><span>Glasgow</span><i></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
             <h3>London</h3>
             <span class="dest-meta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7Z"/></svg>7 hr 30 min</span>
-            <span class="dest-cta">Get a price</span>
+            <span class="dest-cta dest-price">£610</span>
           </a>
         </div>
 
-        <p class="grid-note">Approximate driving times from Glasgow city centre.</p>
+        <p class="grid-note">Prices are one way from Glasgow. Driving times are approximate, from Glasgow city centre.</p>
 
         <ul class="features features-3">
           <li>
@@ -341,66 +380,6 @@
           </li>
         </ul>
         <p class="section-foot">Heading somewhere else? We go anywhere in the UK. <a href="#quote">Ask for a price</a>.</p>
-      </div>
-    </section>
-
-    <!-- Prices -->
-    <section id="prices" class="section">
-      <div class="container">
-        <div class="section-head">
-          <p class="kicker">Prices</p>
-          <h2>Fixed prices, agreed before you travel</h2>
-          <p class="section-sub">One price for the whole car, not per person. No meter, no surprises.</p>
-          <p class="price-note">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0h-1c1.2.8 2 2 2 3.5V19h6v-2.5c0-2.3-4.7-3.5-7-3.5Z"/></svg>
-            Fixed prices are based on a maximum of 4 passengers.
-          </p>
-        </div>
-        <div class="price-grid">
-          <div class="price-card price-air">
-            <div class="price-head">
-              <span class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></svg></span>
-              <h3 id="price-air">Airport transfers</h3>
-            </div>
-            <table class="price-table" aria-labelledby="price-air">
-              <thead><tr><th scope="col">Journey</th><th scope="col">One way</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Glasgow <span class="to" aria-hidden="true">→</span><span class="sr-only">to</span> Glasgow&nbsp;Airport</th><td>£35</td></tr>
-                <tr><th scope="row">East Kilbride <span class="to" aria-hidden="true">→</span><span class="sr-only">to</span> Glasgow&nbsp;Airport</th><td>£45</td></tr>
-                <tr><th scope="row">Glasgow <span class="to" aria-hidden="true">→</span><span class="sr-only">to</span> Edinburgh&nbsp;Airport</th><td>£75</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="price-card price-long">
-            <div class="price-head">
-              <span class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></span>
-              <div>
-                <h3 id="price-long">Long-distance journeys</h3>
-                <span>From Glasgow</span>
-              </div>
-            </div>
-            <table class="price-table" aria-labelledby="price-long">
-              <thead><tr><th scope="col">Destination</th><th scope="col">One way</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Newcastle</th><td>£250</td></tr>
-                <tr><th scope="row">Newcastle Airport</th><td>£270</td></tr>
-                <tr><th scope="row">Manchester</th><td>£335</td></tr>
-                <tr><th scope="row">Manchester Airport</th><td>£360</td></tr>
-                <tr><th scope="row">Liverpool</th><td>£310</td></tr>
-                <tr><th scope="row">Liverpool Airport</th><td>£325</td></tr>
-                <tr><th scope="row">Birmingham</th><td>£410</td></tr>
-                <tr><th scope="row">Birmingham Airport</th><td>£430</td></tr>
-                <tr><th scope="row">London</th><td>£610</td></tr>
-                <tr><th scope="row">London Heathrow</th><td>£635</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="price-ask">
-            <strong>Going somewhere else?</strong>
-            <p>We go anywhere in the UK, and do return trips too. Tell us your journey and we’ll reply with a fixed price.</p>
-            <a href="#quote" class="btn btn-gold btn-small">Get a quote</a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -510,7 +489,7 @@
           </details>
           <details>
             <summary>Do you go to England?</summary>
-            <p>Yes. As well as Scottish airports and towns, we do long-distance journeys to Newcastle, Manchester, London and anywhere else in the UK.</p>
+            <p>Yes. As well as Scottish airports and towns, we do long-distance journeys to Newcastle, Manchester, Liverpool, Birmingham, London and anywhere else in the UK.</p>
           </details>
           <details>
             <summary>Can we stop on the way?</summary>
@@ -575,7 +554,6 @@
         <h4>Explore</h4>
         <a href="#airports">Airport transfers</a>
         <a href="#long-distance">Long distance</a>
-        <a href="#prices">Prices</a>
         <a href="#how">How it works</a>
         <a href="#faq">FAQ</a>
       </div>

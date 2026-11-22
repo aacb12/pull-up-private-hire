@@ -27,7 +27,9 @@ The car takes up to 4 passengers and 3 large suitcases, so the form only offers 
 
 ## Prices
 
-The Prices section (`#prices` in `index.html`) has two tables: airport transfers and long-distance journeys from Glasgow. The owner asked for the note "Fixed prices are based on a maximum of 4 passengers" to be shown with them. This is his full list as of November 2026, and every price is one way. The only London airport price is Heathrow's: he asked for the other London airports not to be mentioned there. To change a price, edit the `<td>` in that row.
+Fixed prices are shown on the airport and route cards (`dest-price` in `index.html`), so each place appears once with its price. Cards without a fixed price say "Get a price". The note "Fixed prices are based on a maximum of 4 passengers", which the owner asked for, is at the top of both sections.
+
+This is his full list as of November 2026, and every price is one way from Glasgow. Glasgow Airport is £45 from East Kilbride, which is in the note under the airport cards. The only London airport price is Heathrow's: he asked for the other London airports not to be mentioned. The driving times on the Liverpool, Birmingham and Newcastle cards are rough estimates, like the rest.
 
 ## Logo
 
