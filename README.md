@@ -12,6 +12,8 @@ GitHub Pages serves the `main` branch of this public repo, so every push to `mai
 
 The site lives in a subfolder (`/pull-up-private-hire/`), so all links are relative. `404.html` is the exception: GitHub serves it at any missing URL, so it uses `<base href="/pull-up-private-hire/">` to find the stylesheet and images.
 
+Browsers keep a copy of each file for up to 10 minutes. The pages load `styles.css?v=2` and `script.js?v=2`, so a returning visitor never mixes a new page with an old stylesheet. **When you change `styles.css` or `script.js`, raise the number** in `index.html`, `404.html` and `privacy/index.html`.
+
 ### Adding a domain later
 
 1. Buy the domain, then in the repo go to **Settings → Pages → Custom domain** and enter it. Point its DNS at GitHub Pages as GitHub describes, then tick **Enforce HTTPS**.
