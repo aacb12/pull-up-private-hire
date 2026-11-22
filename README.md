@@ -25,6 +25,10 @@ There's no backend. The quote form in the hero builds a message with the journey
 
 The car takes up to 4 passengers and 3 large suitcases, so the form only offers 1–4 and 0–3.
 
+## Prices
+
+The Prices section (`#prices` in `index.html`) has two tables: airport transfers and long-distance journeys from Glasgow. The owner asked for the note "Fixed prices are based on a maximum of 4 passengers" to be shown with them. This is his full list as of November 2026, and every price is one way. The only London airport price is Heathrow's: he asked for the other London airports not to be mentioned there. To change a price, edit the `<td>` in that row.
+
 ## Logo
 
 `images/logo-header.png` and `images/logo-stacked.png` are the driving school logos with "DRIVING SCHOOL" replaced by "PRIVATE HIRE", set in Montserrat Italic to match the original lettering. The favicon and app icon are the same PU mark as the driving school. `images/og-image.jpg` is the preview picture shown when the link is shared.
@@ -46,6 +50,5 @@ The site says "private hire", not "taxi". In Scotland a taxi (hackney carriage) 
 - **Promises on the page.** Confirm he's happy to offer each one: flight tracking, early and late pick-ups, help with bags, smoke-free car, comfort stops on long trips, WhatsApp updates before pick-up. The FAQ answer on child seats says to ask.
 - **Business name.** The privacy policy names "Pull Up Private Hire" only. Add the limited company name and number if it trades through one (e.g. Pull Up Driving Ltd).
 - **Photos.** There's no photo of the private hire car yet. A photo of the car (and of him with it) would strengthen the "Your car" section.
-- **Prices.** None are shown. If he wants "from £X" prices on the airport and route cards, get a list from him.
 - **Terms and conditions.** Not written yet. They need his cancellation, waiting time and payment policy.
 - **Domain.** See "Adding a domain later" above.

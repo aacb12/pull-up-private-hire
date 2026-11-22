@@ -106,7 +106,7 @@ document.getElementById("send-email").addEventListener("click", () => {
 
 // Fade sections in as they scroll into view
 const revealEls = document.querySelectorAll(
-  ".section-head, .dest-card, .panel, .features-3 li, .steps li, .about > *, .faq details, .contact > *"
+  ".section-head, .dest-card, .panel, .features-3 li, .price-grid > *, .steps li, .about > *, .faq details, .contact > *"
 );
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver(

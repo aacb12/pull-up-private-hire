@@ -102,6 +102,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--gold); transform: scaleX(0); transition: transform .2s; }
 .nav a:hover::after { transform: scaleX(1); }
 .header-actions { display: flex; align-items: center; gap: 16px; }
+.header-actions .btn { white-space: nowrap; }
 .header-phone { display: inline-flex; align-items: center; gap: 6px; color: var(--white); font-weight: 700; text-decoration: none; white-space: nowrap; }
 .header-phone svg { color: var(--gold); }
 .nav-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
@@ -234,6 +235,31 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .features-3 { grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px; }
 .features-3 li { background: var(--surface); padding: 20px; }
 
+/* Prices */
+.price-note { display: inline-flex; align-items: center; gap: 10px; margin: 8px 0 0; padding: 10px 18px; border-radius: 999px; background: var(--gold-tint); border: 1px solid var(--gold-line); color: var(--white); font-weight: 700; font-size: .98rem; text-align: left; }
+.price-note svg { color: var(--gold); width: 22px; height: 22px; }
+.price-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr; grid-template-areas: "air long" "ask long"; gap: 20px; align-items: start; max-width: 980px; margin: 0 auto; }
+.price-air { grid-area: air; }
+.price-long { grid-area: long; }
+.price-ask { grid-area: ask; }
+.price-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 28px; }
+.price-head { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.price-head .icon-wrap { width: 44px; height: 44px; border-radius: 12px; }
+.price-head .icon-wrap svg { width: 22px; height: 22px; }
+.price-head h3 { margin: 0; }
+.price-head span:not(.icon-wrap) { color: var(--muted); font-size: .9rem; }
+.price-table { width: 100%; border-collapse: collapse; }
+.price-table th, .price-table td { padding: 12px 0; border-bottom: 1px solid var(--border); text-align: left; vertical-align: baseline; }
+.price-table thead th { padding-top: 0; font-size: .75rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.price-table tbody th { font-weight: 600; color: var(--text); }
+.price-table thead th:last-child, .price-table td { text-align: right; padding-left: 16px; white-space: nowrap; }
+.price-table td { font-size: 1.15rem; font-weight: 800; color: var(--gold-light); }
+.price-table tbody tr:last-child > * { border-bottom: 0; padding-bottom: 0; }
+.price-table .to { color: var(--gold); margin: 0 2px; }
+.price-ask { align-self: stretch; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; background: radial-gradient(circle at 0% 0%, rgba(212,166,60,.12), transparent 55%), var(--surface); border: 1px solid var(--gold-line); border-radius: 20px; padding: 28px; }
+.price-ask strong { color: var(--white); font-size: 1.2rem; margin-bottom: 6px; }
+.price-ask p { color: var(--muted); margin-bottom: 18px; }
+
 /* How it works */
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .steps li { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 26px; }
@@ -338,7 +364,8 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .panel { grid-template-columns: 1fr; gap: 28px; }
 }
 
-@media (max-width: 900px) {
+/* Seven nav links stop fitting beside the logo and button below about 1040px */
+@media (max-width: 1040px) {
   .nav-toggle { display: block; }
   .nav {
     position: absolute; top: 76px; left: 0; right: 0;
@@ -350,12 +377,15 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .nav a { padding: 14px 20px; border-top: 1px solid var(--border); }
   .nav a::after { display: none; }
   .header-actions { margin-left: auto; }
+}
 
+@media (max-width: 900px) {
   .hero { padding: 44px 0 104px; }
   .hero-inner, .about, .contact { grid-template-columns: 1fr; }
   .quote-card { max-width: 560px; }
   .about { gap: 40px; }
   .steps, .features-3 { grid-template-columns: 1fr; }
+  .price-grid { grid-template-columns: 1fr; grid-template-areas: "air" "long" "ask"; max-width: 560px; }
   .steps li:not(:last-child)::after { top: auto; bottom: -19px; left: 48px; width: 2px; height: 18px; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
@@ -369,6 +399,8 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .quote-card { padding: 30px 18px 18px; border-radius: 20px; }
   .features { grid-template-columns: 1fr; }
   .panel { padding: 28px 20px; }
+  .price-card, .price-ask { padding: 22px 18px; }
+  .price-note { border-radius: 14px; font-size: .92rem; }
   .dest-card { padding: 18px 16px 16px; }
   .dest-top { margin-bottom: 8px; }
   .route > span { display: none; }
@@ -403,4 +435,4 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 }
 
 /* Let grid children shrink below their content width (stops sideways scroll on phones) */
-.hero-inner > *, .about > *, .contact > *, .panel > *, .footer-inner > *, .field-row > * { min-width: 0; }
+.hero-inner > *, .about > *, .contact > *, .panel > *, .price-grid > *, .footer-inner > *, .field-row > * { min-width: 0; }
