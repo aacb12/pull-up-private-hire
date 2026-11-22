@@ -177,11 +177,6 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .more[open] summary::before { transform: rotate(45deg); }
 .more[open] summary { margin-bottom: 12px; }
 
-.size-note { margin: -2px 0 14px; padding: 10px 12px; border-radius: 10px; background: var(--gold-tint); border: 1px solid var(--gold-line); color: var(--white); font-size: .86rem; line-height: 1.45; }
-.size-note[hidden] { display: none; }
-.form-note { display: flex; align-items: center; gap: 10px; margin: 16px 0 0; padding-top: 14px; border-top: 1px solid var(--border); color: var(--muted); font-size: .86rem; }
-.form-note svg { color: var(--gold); width: 20px; height: 20px; }
-
 /* Road motif echoing the logo */
 .road { position: absolute; left: 0; right: 0; bottom: 0; height: 44px; background: #000; border-top: 1px solid var(--border); }
 .road::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 4px; transform: translateY(-50%); background: repeating-linear-gradient(90deg, var(--gold) 0 46px, transparent 46px 86px); opacity: .85; }
@@ -243,25 +238,6 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .steps p { color: var(--muted); margin: 0; }
 .step-num { width: 44px; height: 44px; border-radius: 50%; background: var(--gold-grad); color: var(--bg); display: grid; place-items: center; font-weight: 800; font-size: 1.1rem; margin-bottom: 18px; }
 .steps-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 40px; }
-
-/* Car and driver */
-.section-feature { background: radial-gradient(circle at 100% 50%, rgba(212,166,60,.10), transparent 45%), var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.about { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: center; }
-.about-copy p { color: var(--muted); }
-.spec { background: radial-gradient(circle at 0% 0%, rgba(212,166,60,.14), transparent 55%), var(--surface); border: 1px solid var(--gold-line); border-radius: 24px; padding: 36px; box-shadow: var(--shadow-lg); }
-.spec-head { display: flex; align-items: center; gap: 16px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
-.spec-head strong { display: block; color: var(--white); font-size: 1.25rem; }
-.spec-head span:not(.icon-wrap) { color: var(--muted); font-size: .95rem; }
-.spec-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
-.stat { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 14px; align-items: center; background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; }
-.stat svg { grid-row: 1 / 3; width: 30px; height: 30px; color: var(--gold); }
-.stat strong { font-size: 2.6rem; font-weight: 800; line-height: 1; letter-spacing: -0.03em; background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.stat span { color: var(--muted); font-weight: 600; font-size: .92rem; }
-.spec-note { margin: 0; color: var(--muted); font-size: .95rem; }
-.checklist { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 12px; }
-.checklist li { display: flex; gap: 12px; align-items: center; color: var(--white); font-weight: 600; }
-.checklist li::before { content: "✓"; width: 26px; height: 26px; flex-shrink: 0; border-radius: 50%; background: var(--gold-grad); color: var(--bg); display: grid; place-items: center; font-weight: 800; font-size: .85rem; }
-.checklist a { color: var(--gold-light); }
 
 /* FAQ */
 .faq { display: grid; gap: 12px; }
@@ -353,9 +329,8 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .header-actions { margin-left: auto; }
 
   .hero { padding: 44px 0 104px; }
-  .hero-inner, .about, .contact { grid-template-columns: 1fr; }
+  .hero-inner, .contact { grid-template-columns: 1fr; }
   .quote-card { max-width: 560px; }
-  .about { gap: 40px; }
   .steps { grid-template-columns: 1fr; }
   .price-grid { grid-template-columns: 1fr; grid-template-areas: "air" "long" "ask"; max-width: 560px; }
   .steps li:not(:last-child)::after { top: auto; bottom: -19px; left: 48px; width: 2px; height: 18px; }
@@ -374,11 +349,6 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .price-note { border-radius: 14px; font-size: .92rem; }
   .price-card { padding: 22px 18px 8px; }
   .price-ask { padding: 22px 18px; }
-  .spec { padding: 24px 18px; }
-  .stat { padding: 14px; column-gap: 10px; }
-  .stat strong { font-size: 2.2rem; }
-  .stat svg { grid-row: 1; width: 24px; height: 24px; }
-  .stat span { grid-column: 1 / -1; margin-top: 6px; }
   .contact-card { font-size: .9rem; }
   .map iframe { height: 280px; }
   .footer-inner { grid-template-columns: 1fr; }
@@ -398,4 +368,4 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 }
 
 /* Let grid children shrink below their content width (stops sideways scroll on phones) */
-.hero-inner > *, .about > *, .contact > *, .panel > *, .price-grid > *, .footer-inner > *, .field-row > * { min-width: 0; }
+.hero-inner > *, .contact > *, .panel > *, .price-grid > *, .footer-inner > *, .field-row > * { min-width: 0; }

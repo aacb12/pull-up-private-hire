@@ -12,7 +12,7 @@ GitHub Pages serves the `main` branch of this public repo, so every push to `mai
 
 The site lives in a subfolder (`/pull-up-private-hire/`), so all links are relative. `404.html` is the exception: GitHub serves it at any missing URL, so it uses `<base href="/pull-up-private-hire/">` to find the stylesheet and images.
 
-Browsers keep a copy of each file for up to 10 minutes. The pages load `styles.css?v=3` and `script.js?v=3`, so a returning visitor never mixes a new page with an old stylesheet. **When you change `styles.css` or `script.js`, raise the number** in `index.html`, `404.html` and `privacy/index.html`.
+Browsers keep a copy of each file for up to 10 minutes. The pages load `styles.css?v=4` and `script.js?v=4`, so a returning visitor never mixes a new page with an old stylesheet. **When you change `styles.css` or `script.js`, raise the number** in `index.html`, `404.html` and `privacy/index.html`.
 
 ### Adding a domain later
 
@@ -25,7 +25,7 @@ Browsers keep a copy of each file for up to 10 minutes. The pages load `styles.c
 
 There's no backend. The quote form in the hero builds a message with the journey details (pick-up, drop-off, date, time, return, passengers, suitcases, flight number) and opens WhatsApp with it ready to send. "Or send by email instead" does the same with an email. Each row in the fixed price list fills in the drop-off and jumps to the form.
 
-The owner's car takes up to 4 passengers and 2 large suitcases. When a job doesn't fit, he passes it to drivers he knows with bigger vehicles. So the form lets people choose up to "9 or more" passengers and "7 or more" suitcases. Anything over 4 passengers or 2 suitcases shows a note saying a bigger vehicle will be arranged.
+The owner's car takes up to 4 passengers and 2 large suitcases. When a job doesn't fit, he passes it to drivers he knows with bigger vehicles. So the form lets people choose up to "9 or more" passengers and "7 or more" suitcases. On purpose, the page doesn't say whose car it will be, how big his car is, or that the business has one car. (There's no "Your car" section for the same reason.) It only says the fixed prices are for up to 4 passengers.
 
 ## Prices
 
@@ -50,9 +50,8 @@ The site says "private hire", not "taxi". In Scotland a taxi (hackney carriage) 
 ## Still to check with the owner
 
 - **Contact details.** Phone, WhatsApp and email are the driving school's (07741 405694, puotl@outlook.com), in `index.html`, `script.js` and `privacy/index.html`. Change them if the private hire side uses different ones.
-- **Licence.** The page says "Licensed private hire driver and car". Confirm this, and add the council licence number if he wants it shown.
-- **Promises on the page.** Confirm he's happy to offer each one: flight tracking, early and late pick-ups, help with bags, smoke-free car, comfort stops on long trips, WhatsApp updates before pick-up. The FAQ answer on child seats says to ask.
+- **Licence.** The page doesn't mention the licence. Add the council licence number (the footer is a good place) if he wants it shown.
+- **Promises on the page.** Confirm he's happy to offer each one: flight tracking, early and late pick-ups, help with bags, comfort stops on long trips. The FAQ answer on child seats says to ask.
 - **Business name.** The privacy policy names "Pull Up Private Hire" only. Add the limited company name and number if it trades through one (e.g. Pull Up Driving Ltd).
-- **Photos.** There's no photo of the private hire car yet. A photo of the car (and of him with it) would strengthen the "Your car" section.
 - **Terms and conditions.** Not written yet. They need his cancellation, waiting time and payment policy.
 - **Domain.** See "Adding a domain later" above.

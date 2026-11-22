@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 
   <script type="application/ld+json">
   {
@@ -59,7 +59,6 @@
       <nav class="nav" id="nav">
         <a href="#prices">Prices</a>
         <a href="#how">How it works</a>
-        <a href="#car">Your car</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -133,7 +132,6 @@
               </select>
             </label>
           </div>
-          <p class="size-note" id="size-note" hidden>That’s more than our car takes. Send it anyway and we’ll arrange a bigger vehicle with a driver we know and trust.</p>
           <div class="field-row">
             <label>Your name<input name="name" required autocomplete="name"></label>
             <label>Phone <small>(optional)</small><input name="phone" type="tel" autocomplete="tel"></label>
@@ -149,10 +147,6 @@
             Get my price on WhatsApp
           </button>
           <button type="button" class="link-btn" id="send-email">Or send by email instead</button>
-          <p class="form-note">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0h-1c1.2.8 2 2 2 3.5V19h6v-2.5c0-2.3-4.7-3.5-7-3.5Z"/></svg>
-            Our car takes up to 4 passengers and 2 large suitcases. Need more room? We can arrange a bigger vehicle.
-          </p>
 
           <datalist id="places">
             <option value="Glasgow Airport"></option>
@@ -310,48 +304,6 @@
       </div>
     </section>
 
-    <!-- Car and driver -->
-    <section id="car" class="section section-feature">
-      <div class="container about">
-        <!-- TODO: swap or add a photo of the private hire car when the driver sends one -->
-        <div class="spec">
-          <div class="spec-head">
-            <span class="icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11m-14 0h14m-14 0a2 2 0 0 0-2 2v3h2m14-5a2 2 0 0 1 2 2v3h-2M5 16v2m14-2v2M5 16h14M7.5 13.5h.01M16.5 13.5h.01"/></svg></span>
-            <div>
-              <strong>Your car</strong>
-              <span>Booked just for you, never shared with other passengers</span>
-            </div>
-          </div>
-          <div class="spec-stats">
-            <div class="stat">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0h-1c1.2.8 2 2 2 3.5V19h6v-2.5c0-2.3-4.7-3.5-7-3.5Z"/></svg>
-              <strong>4</strong>
-              <span>passengers</span>
-            </div>
-            <div class="stat">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M9 3h6v3h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-1v2h-2v-2h-4v2H8v-2H7a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2V3Zm2 2v1h2V5h-2Zm-1 4v7h1.5V9H10Zm2.5 0v7H14V9h-1.5Z"/></svg>
-              <strong>2</strong>
-              <span>large suitcases</span>
-            </div>
-          </div>
-          <p class="spec-note">More people or luggage than that? Tell us when you ask for a quote and we’ll arrange a bigger vehicle with a driver we know and trust.</p>
-        </div>
-        <div class="about-copy">
-          <p class="kicker">Your car &amp; driver</p>
-          <h2>One car. One driver. No call centre.</h2>
-          <p>Pull Up Private Hire is a small, local Glasgow business with one car. When you book, you’re dealing with the person who’ll actually drive you, not a dispatcher passing your booking along.</p>
-          <p>You’ll know exactly who’s picking you up, and you can message your driver directly if your plans change. If your group needs more room than our car has, we’ll arrange a bigger vehicle with a driver we know and trust.</p>
-          <!-- TODO: confirm the licence wording with the driver, and add the council licence number if he wants it shown -->
-          <ul class="checklist">
-            <li>Licensed private hire driver and car</li>
-            <li>Clean, comfortable, smoke-free car</li>
-            <li>Updates on WhatsApp before your pick-up</li>
-            <li><span>From the team behind <a href="https://pullupdrivingschool.co.uk/" target="_blank" rel="noopener">Pull Up Driving School</a></span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <!-- FAQ -->
     <section id="faq" class="section section-tint">
       <div class="container narrow">
@@ -362,7 +314,7 @@
         <div class="faq">
           <details>
             <summary>How far ahead should I book?</summary>
-            <p>As early as you can, especially for early-morning flights and long journeys. We have one car, so booking ahead is the best way to make sure we can take you. For a last-minute trip, message us anyway and we’ll tell you straight away if we can do it.</p>
+            <p>As early as you can, especially for early-morning flights and long journeys. For a last-minute trip, message us anyway and we’ll tell you straight away if we can do it.</p>
           </details>
           <details>
             <summary>What happens if my flight is delayed?</summary>
@@ -370,7 +322,7 @@
           </details>
           <details>
             <summary>How many passengers and bags can you take?</summary>
-            <p>Our car takes up to 4 passengers and 2 large check-in suitcases. If there are more of you, or more luggage, put the real numbers on the quote form and send it anyway: we’ll arrange a bigger vehicle with a driver we know and trust.</p>
+            <p>Tell us how many passengers and large suitcases when you ask for a quote, and we’ll quote for a car that fits you all. Our fixed prices are for up to 4 passengers.</p>
           </details>
           <details>
             <summary>Is the price fixed?</summary>
@@ -472,6 +424,6 @@
     <a href="#quote" class="mb-book">Quote</a>
   </div>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
