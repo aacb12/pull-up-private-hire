@@ -21,15 +21,15 @@ The site lives in a subfolder (`/pull-up-private-hire/`), so all links are relat
 
 ## How the quote form works
 
-There's no backend. The quote form in the hero builds a message with the journey details (pick-up, drop-off, date, time, return, passengers, suitcases, flight number) and opens WhatsApp with it ready to send. "Or send by email instead" does the same with an email. The airport and route cards fill in the drop-off and jump to the form.
+There's no backend. The quote form in the hero builds a message with the journey details (pick-up, drop-off, date, time, return, passengers, suitcases, flight number) and opens WhatsApp with it ready to send. "Or send by email instead" does the same with an email. Each row in the fixed price list fills in the drop-off and jumps to the form.
 
 The car takes up to 4 passengers and 3 large suitcases, so the form only offers 1–4 and 0–3.
 
 ## Prices
 
-Fixed prices are shown on the airport and route cards (`dest-price` in `index.html`), so each place appears once with its price. Cards without a fixed price say "Get a price". The note "Fixed prices are based on a maximum of 4 passengers", which the owner asked for, is at the top of both sections.
+The Fixed prices section (`#prices` in `index.html`) comes straight after the hero and is the only place destinations and prices are listed. The owner wanted prices near the top, so the hero has a "See our fixed prices" button. The page doesn't list "airports we cover" or show cards marked "Get a price", because he'll go to any airport. The note "Fixed prices are based on a maximum of 4 passengers", which he asked for, sits above the lists.
 
-This is his full list as of November 2026, and every price is one way from Glasgow. Glasgow Airport is £45 from East Kilbride, which is in the note under the airport cards. The only London airport price is Heathrow's: he asked for the other London airports not to be mentioned. The driving times on the Liverpool, Birmingham and Newcastle cards are rough estimates, like the rest.
+This is his full list as of November 2026, in his order, and every price is one way. The only London airport price is Heathrow's: he asked for the other London airports not to be mentioned. To change a price, edit its row in the list.
 
 ## Logo
 

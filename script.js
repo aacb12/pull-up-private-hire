@@ -52,7 +52,7 @@ function syncTrip() {
 form.querySelectorAll('input[name="trip"]').forEach((r) => r.addEventListener("change", syncTrip));
 syncTrip();
 
-// Airport and route cards fill in the drop-off, then the link scrolls to the form
+// Rows in the price list fill in the drop-off, then the link scrolls to the form
 const finePointer = window.matchMedia("(pointer: fine)").matches;
 document.querySelectorAll("[data-to]").forEach((card) =>
   card.addEventListener("click", () => {
@@ -106,7 +106,7 @@ document.getElementById("send-email").addEventListener("click", () => {
 
 // Fade sections in as they scroll into view
 const revealEls = document.querySelectorAll(
-  ".section-head, .dest-card, .panel, .features-3 li, .steps li, .about > *, .faq details, .contact > *"
+  ".section-head, .price-grid > *, .panel, .steps li, .about > *, .faq details, .contact > *"
 );
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver(

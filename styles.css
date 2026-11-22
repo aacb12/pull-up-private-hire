@@ -130,10 +130,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .trust { list-style: none; padding: 0; margin: 28px 0 0; display: flex; flex-wrap: wrap; gap: 10px 24px; font-weight: 600; font-size: .95rem; color: #d4d4da; }
 .trust li { display: flex; align-items: center; gap: 6px; }
 .trust svg { color: var(--gold); }
-.hero-airports { margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--border); }
-.hero-airports p { margin: 0 0 12px; font-size: .78rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
-.hero-airports ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.hero-airports li { font-size: .88rem; font-weight: 700; color: var(--gold-light); background: var(--gold-tint); border: 1px solid var(--gold-line); padding: 5px 12px; border-radius: 999px; }
+.hero-prices { margin-top: 30px; }
 
 /* Quote form */
 .quote-card {
@@ -198,34 +195,32 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .icon-wrap { width: 52px; height: 52px; border-radius: 14px; background: var(--gold-tint); color: var(--gold-light); display: grid; place-items: center; flex-shrink: 0; }
 .icon-wrap svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
-/* Airport and route cards */
-.dest-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.dest-card {
-  display: flex; flex-direction: column; gap: 6px;
-  padding: 22px 22px 20px;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-  color: var(--text); text-decoration: none;
-  transition: transform .2s, border-color .2s, box-shadow .2s;
-}
-.dest-card:hover, .dest-card:focus-visible { transform: translateY(-4px); border-color: var(--gold-line); box-shadow: var(--shadow); }
-.dest-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-.dest-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; color: var(--gold); }
-.dest-top svg { width: 22px; height: 22px; }
-.code { font-size: .78rem; font-weight: 800; letter-spacing: .12em; color: var(--gold-light); background: var(--gold-tint); border: 1px solid var(--gold-line); padding: 3px 9px; border-radius: 8px; }
-.route > span { font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.route i { flex: 1; height: 2px; background: repeating-linear-gradient(90deg, var(--gold) 0 8px, transparent 8px 14px); opacity: .7; }
-.dest-card h3 { margin: 0; font-size: 1.12rem; }
-.dest-meta { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: .9rem; white-space: nowrap; }
-.dest-meta svg { width: 15px; height: 15px; }
-.dest-cta { margin-top: auto; padding-top: 14px; display: inline-flex; align-items: center; gap: 6px; color: var(--gold-light); font-weight: 700; font-size: .9rem; }
-.dest-cta::after { content: "→"; transition: transform .2s; }
-.dest-card:hover .dest-cta::after { transform: translateX(4px); }
-.dest-price { gap: 5px; font-size: 1.1rem; font-weight: 800; }
-.dest-price small { font-size: .8rem; font-weight: 600; color: var(--muted); }
-.dest-grid-5 { grid-template-columns: repeat(5, 1fr); }
+/* Fixed prices */
 .price-note { display: inline-flex; align-items: center; gap: 10px; margin: 8px 0 0; padding: 10px 18px; border-radius: 999px; background: var(--gold-tint); border: 1px solid var(--gold-line); color: var(--white); font-weight: 700; font-size: .98rem; text-align: left; }
 .price-note svg { color: var(--gold); width: 22px; height: 22px; }
-.grid-note { margin: 18px 0 0; text-align: center; color: var(--muted); font-size: .88rem; }
+.price-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr; grid-template-areas: "air long" "ask long"; gap: 20px; align-items: start; max-width: 980px; margin: 0 auto; }
+.price-air { grid-area: air; }
+.price-long { grid-area: long; }
+.price-ask { grid-area: ask; }
+.price-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 28px 28px 14px; }
+.price-head { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.price-head .icon-wrap { width: 44px; height: 44px; border-radius: 12px; }
+.price-head .icon-wrap svg { width: 22px; height: 22px; }
+.price-head h3 { margin: 0; }
+.price-head span:not(.icon-wrap) { color: var(--muted); font-size: .9rem; }
+.price-cols { display: flex; justify-content: space-between; margin: 0; padding: 0 22px 10px 0; border-bottom: 1px solid var(--border); font-size: .75rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.price-list { list-style: none; margin: 0; padding: 0; }
+.price-list li + li { border-top: 1px solid var(--border); }
+.price-list a { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 13px 0; color: var(--text); font-weight: 600; text-decoration: none; transition: color .15s; }
+.price-list a:hover { color: var(--white); }
+.price-list a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 6px; }
+.price-list strong { font-size: 1.15rem; font-weight: 800; color: var(--gold-light); white-space: nowrap; }
+.price-list strong::after { content: "→"; display: inline-block; margin-left: 8px; font-size: .9rem; color: var(--gold); opacity: .45; transition: opacity .15s, transform .15s; }
+.price-list a:hover strong::after { opacity: 1; transform: translateX(3px); }
+.price-list .to { color: var(--gold); margin: 0 2px; }
+.price-ask { align-self: stretch; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; background: radial-gradient(circle at 0% 0%, rgba(212,166,60,.12), transparent 55%), var(--surface); border: 1px solid var(--gold-line); border-radius: 20px; padding: 28px; }
+.price-ask strong { color: var(--white); font-size: 1.2rem; margin-bottom: 6px; }
+.price-ask p { color: var(--muted); margin-bottom: 18px; }
 
 /* Feature panel and lists */
 .panel { margin-top: 56px; display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; align-items: center; background: radial-gradient(circle at 0% 0%, rgba(212,166,60,.12), transparent 50%), var(--surface); border: 1px solid var(--gold-line); border-radius: 24px; padding: 44px; }
@@ -237,8 +232,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .features .icon-wrap svg { width: 21px; height: 21px; }
 .features strong { display: block; color: var(--white); margin-bottom: 2px; line-height: 1.3; }
 .features p { margin: 0; color: var(--muted); font-size: .92rem; }
-.features-3 { grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px; }
-.features-3 li { background: var(--surface); padding: 20px; }
+.section-head + .panel { margin-top: 0; }
 
 /* How it works */
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -339,7 +333,6 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 }
 
 @media (max-width: 1080px) {
-  .dest-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 430px); gap: 40px; }
   .panel { grid-template-columns: 1fr; gap: 28px; }
 }
@@ -361,7 +354,8 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .hero-inner, .about, .contact { grid-template-columns: 1fr; }
   .quote-card { max-width: 560px; }
   .about { gap: 40px; }
-  .steps, .features-3 { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .price-grid { grid-template-columns: 1fr; grid-template-areas: "air" "long" "ask"; max-width: 560px; }
   .steps li:not(:last-child)::after { top: auto; bottom: -19px; left: 48px; width: 2px; height: 18px; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
@@ -371,14 +365,13 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .section { padding: 72px 0; }
   .logo img { height: 38px; }
   .header-actions .btn { display: none; }
-  .hero-airports { margin-top: 26px; padding-top: 20px; }
+  .hero-prices { margin-top: 24px; }
   .quote-card { padding: 30px 18px 18px; border-radius: 20px; }
   .features { grid-template-columns: 1fr; }
   .panel { padding: 28px 20px; }
   .price-note { border-radius: 14px; font-size: .92rem; }
-  .dest-card { padding: 18px 16px 16px; }
-  .dest-top { margin-bottom: 8px; }
-  .route > span { display: none; }
+  .price-card { padding: 22px 18px 8px; }
+  .price-ask { padding: 22px 18px; }
   .spec { padding: 24px 18px; }
   .stat { padding: 14px; column-gap: 10px; }
   .stat strong { font-size: 2.2rem; }
@@ -402,12 +395,5 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .mobile-bar .mb-book { background: var(--gold-grad); color: var(--bg); border: 0; }
 }
 
-@media (max-width: 380px) {
-  .dest-grid { gap: 10px; }
-  .dest-card { padding: 16px 14px 14px; }
-  .dest-card h3 { font-size: 1rem; }
-  .dest-meta { font-size: .82rem; }
-}
-
 /* Let grid children shrink below their content width (stops sideways scroll on phones) */
-.hero-inner > *, .about > *, .contact > *, .panel > *, .footer-inner > *, .field-row > * { min-width: 0; }
+.hero-inner > *, .about > *, .contact > *, .panel > *, .price-grid > *, .footer-inner > *, .field-row > * { min-width: 0; }
